@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kayıt Ekranı</title>
+	<link rel="stylesheet" href="../css/kayıtol.css">
+</head>
+<body>
+	<div class="container right-panel-active">
+		<div class="container__form container--signup">
+			<form action="#" class="form" id="form1">
+                
+                <input type="text" placeholder="ad"required class="input">
+                <input type="text" placeholder="soyad"required class="input">
+                <input type="email" placeholder="E-mail"required class="input">
+                <input type="number" placeholder="telefon no" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="input">
+                <input type="password" placeholder="şifre" required class="input">
+                <input type="text" placeholder="adress" required class="input">
+                <button class="btn"><a href="../html/giriş.html">Müşteri Kayıt Ol</a></button>
+                
+			</form>
+		</div>
+	
+		<div class="container__form container--signin">
+			<form action="#" class="form" id="form2">
+				<input type="text" placeholder="Marka"required class="input">
+        <input type="email" placeholder="E-mail"required class="input">
+        <input type="number" placeholder="telefon no" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="input">
+        <input type="password" placeholder="şifre" required class="input">
+        <input type="text" placeholder="adress" required class="input">
+        <input type="number"placeholder="çalışan no" required class="input">
+		<button class="btn"><a href="../html/giriş.html">Firma Kayıt Ol</a></button>
+       
+			</form>
+		</div>
+	
+		<div class="container__overlay">
+			<div class="overlay">
+				<div class="overlay__panel overlay--left">
+					<button class="btn" id="signIn">Firma Kaydı</button>
+				</div>
+				<div class="overlay__panel overlay--right">
+					<button class="btn" id="signUp">Müşteri Kaydı</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+<script>
+	const signInBtn = document.getElementById("signIn");
+	const signUpBtn = document.getElementById("signUp");
+	const fistForm = document.getElementById("form1");
+	const secondForm = document.getElementById("form2");
+	const container = document.querySelector(".container");
+
+	signInBtn.addEventListener("click", () => {
+		container.classList.remove("right-panel-active");
+	});
+
+	signUpBtn.addEventListener("click", () => {
+		container.classList.add("right-panel-active");
+	});
+
+	fistForm.addEventListener("submit", (e) => e.preventDefault());
+	secondForm.addEventListener("submit", (e) => e.preventDefault());
+
+</script>
+
+</html>

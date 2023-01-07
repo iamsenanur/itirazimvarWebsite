@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Müşteri Profil Düzenle</title>
+    <link rel="stylesheet" href="../css/anasayfa.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body style="background-color: lightsteelblue;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<!--navbarımız-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+        <a href="#" class="navbar-brand">İtirazım Var</a>
+        <!--button-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+         data-bs-target="#menu1"
+          aria-controls="menu1" 
+          aria-expanded="false"
+           aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="menu1">
+        <ul class="navbar-nav">
+            
+            <li class="nav-item"><a href="../html/müşterişikayetlerim.html" class="nav-link">Şikayetlerim</a></li>
+            <li class="nav-item"><a href="../html/müşterişikayetekle.html" class="nav-link">Şikayet Ekle</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Profil</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="../html/müşteriprofildüzenle.html">Profilimi Düzenle</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../html/index.html">Çıkış Yap</a></li>
+                </ul>
+              </li>
+        </ul>
+        
+        </div>
+    </div>
+   
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" id="search" type="text" placeholder="Search" aria-label="Search">
+      <button  id="ara" type="button" class="btn btn-warning">Search</button>
+      </form>
+     
+</nav>
+<section class="bolum1">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+            <img src="../resimler/Ellipse 16.png" alt="dosya acilamadi" class="img-fluid">
+<h3>KULLANICI ADI</h3>
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-4">
+                <label for="inputFistName" class="form-label">Şikayet sayısı</label>
+                <input type="number" class="form-control" id="inputFirstName" placeholder="56">
+              </div>
+              <div class="col-md-4">
+                <label for="inputLastName" class="form-label">Yorum yazdığı şikayet sayısı</label>
+                <input type="number" class="form-control" id="inputLastName" placeholder="7">
+              </div>
+              <div class="col-md-4">
+                <label for="inputLastName" class="form-label">Desteklediği şikayet sayısı</label>
+                <input type="number" class="form-control" id="inputLastName" placeholder="10">
+              </div>
+                
+        </div>
+        <div class="col-md-4">
+<h3>ŞİKAYETLERİ</h3>
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Göster
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Gizle
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">SuperStep Bir Ay Kullanmadığım Ayakkabı Yırtıldı</h5>
+              <p class="card-text">SuperStep online uygulama üzerinden aldığım Shkechers marka ayakkabının bir ay bile kullanmadan iç kısmı yırtıldı. Ürünü incelemeye gönderdim. Kusur yok diye geri gönderdiler. Sonra mesaj attılar imalat hatası değil diye. İç kısmında bırakın kumaş yırtığını mensucata kadar yırtılan yeri nasıl olur da görmeyip kusur yok diye ger gönderirler ve bir ay bile kullanılmayan ayakkabı kusurlu, ayıplı mal değilse neden yırtılır? İlgililerden çözüm bekliyorum.</p>
+        <a href="" class="btn btn-outline-warning btn-sm">CEREN ARSLAN</a>
+        <a href="" class="btn btn-outline-success btn-sm">DESTEKLENME</a>
+        <a href="" class="btn btn-outline-danger btn-sm">YORUM</a>
+      </div>
+      </div>  </div>
+  <div class="card card-body">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Hepsiburada Taksitli Ödeme Tek Çekimde Alındı</h5>
+        <p class="card-text">Hepsiburada' dan kredi kartıyla SSD ve SSD kutusu satın aldım fakat bankanın provizyonunda işlem tek çekim olarak görünüyor. İlk kez böyle bir durumla karşılaşıyorum. Gerçekten seçtiğimiz gibi taksitliyse hemen bankaya da yansıtılmasını rica ediyorum.
+
+        </p>
+        <a href="" class="btn btn-outline-warning btn-sm">CEREN ARSLAN</a>
+        <a href="" class="btn btn-outline-success btn-sm">DESTEKLENME</a>
+        <a href="" class="btn btn-outline-danger btn-sm">YORUM</a>
+      </div>
+      </div>  </div>
+  <div class="card card-body">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">hepsiJET Kargo Numarasının Gözükmemesi Ve Kargonun Uzun Süre Gelmemesi</h5>
+        <p class="card-text">Hepsijet ile yollanan kargo ayın 16 undan beri gelmesini bekliyorum. Bugün ayın 26 sı ürün pazartesi elinize ulaşır dedi. Müşteri temsilcisine. Bağlanıyorum sorun çözülmüyor kargo numarası yok ortada verilmiş gözüküyor böyle bir saçmalık olamaz. Daha sonradan verdiğim siparişler. Geldi. Nasıl olduysa bu sipariş kaç gündür ne kargo takip yapabiliyorum ne bir şey hepsi. Burada çözüm merkezi bu aralar çok ilgisiz</p>
+        <a href="" class="btn btn-outline-warning btn-sm">CEREN ARSLAN</a>
+        <a href="" class="btn btn-outline-success btn-sm">DESTEKLENME</a>
+        <a href="" class="btn btn-outline-danger btn-sm">YORUM</a>
+      </div>
+      </div>  </div>
+</div>
+<h3>YORUM YAZDIĞI ŞİKAYETLER</h3>
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Göster
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Gizle
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Media Markt Teslim Edilmeyen Ürün</h5>
+        <p class="card-text">Media Markt internet sitesinden online olarak bir 33826070no lu bir ürün sipariş ettim. İlk başta 1 ile 5 gün içinde teslim edilecek denildi. Bende beklemeye başladım. 2 gün sonra kargoyu Borusan Lojistik ® diye bir yere teslim etmişler. Borusan Lojistik dağıtımda olan ürünü teslim edilmiş olarak göstererek hem beni hem de Media Markt güvenen müşterilerini mağdur etti.</p>
+        <a href="" class="btn btn-outline-warning btn-sm">CEREN ARSLAN</a>
+        <a href="" class="btn btn-outline-success btn-sm">DESTEKLENME</a>
+        <a href="" class="btn btn-outline-danger btn-sm">YORUM</a>
+      </div>
+      </div>  </div>
+  <div class="card card-body">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">In Street Açıklama Yapılmadan KVKK İzni Alınması</h5>
+        <p class="card-text">In Street Sinop mağazası Kasada alışveriş esnasında Açıklama yapılmadan cep numaram alındı gelen mesajı istediler söyledim meğer ticari elektronik iletisi için izin vermişim. Mesaj gelince öğrendim. Niye bunu sormadan izin almadan yaptınız diye sorduğumda cevabı bile hatırlamıyorum baştan savma bir cevap. </p>
+        <a href="" class="btn btn-outline-warning btn-sm">CEREN ARSLAN</a>
+        <a href="" class="btn btn-outline-success btn-sm">DESTEKLENME</a>
+        <a href="" class="btn btn-outline-danger btn-sm">YORUM</a>
+      </div>
+      </div>  </div>
+  
+</div>
+<h3>DESTEKLEDİĞİ ŞİKAYETLER</h3>
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Göster
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Gizle
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Kamil Koç Otobüsünün Geç Kalması</h5>
+        <p class="card-text">2 kişi Bozüyük den Bursa'ya saat 7 ye bilet aldık. Saat 8 de geldi madem saat 8 de gelecekti ne demeye saat 7 ye bilet aldık. 27 /09/2022 tarihinde gerçekleşti. Keşke bileti almasaydım gideceğim yere geç kaldım. İsimden kovuldum ilgilenmeniz rica ederim.</p>
+        <a href="" class="btn btn-outline-warning btn-sm">CEREN ARSLAN</a>
+        <a href="" class="btn btn-outline-success btn-sm">DESTEKLENME</a>
+        <a href="" class="btn btn-outline-danger btn-sm">YORUM</a>
+      </div>
+      </div>  </div>
+  <div class="card card-body">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">MNG Ürünümü Teslim Etmedi</h5>
+        <p class="card-text">Pazarama'dan 22 Aralık tarihinde takvim sipariş verdik. 317922868 numaralı kargo MNG'ye verilmiş ama ne arayan var ne soran. Kargo teslim edilemedi diyor Pazarama ®'ya bakınca az önce. Ciddiyetsiz bir firma. Siparişi takvimi aldığım yere sordum da öğrendim.</p>
+        <a href="" class="btn btn-outline-warning btn-sm">CEREN ARSLAN</a>
+        <a href="" class="btn btn-outline-success btn-sm">DESTEKLENME</a>
+        <a href="" class="btn btn-outline-danger btn-sm">YORUM</a>
+      </div>
+      </div>  </div>
+  
+</div>
+        </div>
+      
+    </div>
+</section>
+<div class="container my-5">
+
+  <footer class="text-center text-lg-start" style="background-color: #db6930;">
+    <div class="container d-flex justify-content-center py-5">
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" >
+        <a href="https://www.linkedin.com/in/senanur-iriz-3b91b0223/" class="fab fa-linkedin"></a>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" >
+        <a href="#" class="fab fa-linkedin"></a>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" >
+        <a href="#" class="fab fa-facebook-f"></a>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" >
+        <a href="#" class="fab fa-youtube"></a>
+      </button>
+    </div>
+
+    
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="../html/index.html">İtirazım Var</a>
+    </div>
+    
+  </footer>
+  
+</div>
+<script>
+  function searchInDivs() {
+   // Arama kutusundaki kelimeyi al
+   var searchTerm = document.getElementById('search').value.toLowerCase();
+ 
+   // Tüm divleri al
+   var divs = document.getElementsByTagName('div');
+ 
+   // Divleri dolaş
+   for (var i = 0; i < divs.length; i++) {
+     var div = divs[i];
+ 
+     // Div içerisindeki "p" etiketlerini al
+     var paragraphs = div.getElementsByTagName('p');
+ 
+     // "p" etiketlerini dolaş
+     for (var j = 0; j < paragraphs.length; j++) {
+       var paragraph = paragraphs[j];
+ 
+       // Etiket içeriğini al ve kelime arama işlemini gerçekleştir
+       var content = paragraph.textContent.toLowerCase();
+       if (content.indexOf(searchTerm) !== -1) {
+ 
+         // Eğer kelime bulunduysa etiketi vurgula
+         paragraph.style.backgroundColor = 'yellow';
+       } else {
+         // Eğer kelime bulunamadıysa vurgulamayı kaldır
+         paragraph.style.backgroundColor = '';
+       }
+     }
+   }
+ }
+ 
+ // Arama butonuna tıklandığında arama işlemini gerçekleştir
+ document.getElementById('ara').addEventListener('click', searchInDivs);
+
+</script>
+</body>
+</html>

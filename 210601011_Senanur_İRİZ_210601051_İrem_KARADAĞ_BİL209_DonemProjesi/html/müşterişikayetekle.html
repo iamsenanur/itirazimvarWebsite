@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Müşteri Profil Düzenle</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../css/anasayfa.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body style="background-color: lightsteelblue;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<!--navbarımız-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+        <a href="#" class="navbar-brand">İtirazım Var</a>
+        <!--button-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+         data-bs-target="#menu1"
+          aria-controls="menu1" 
+          aria-expanded="false"
+           aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="menu1">
+        <ul class="navbar-nav">
+            
+            <li class="nav-item"><a href="../html/müşterişikayetlerim.html" class="nav-link">Şikayetlerim</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">Şikayet Ekle</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Profil</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="../html/müşteriprofildüzenle.html">Profilimi Düzenle</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../html/index.html">Çıkış Yap</a></li>
+                </ul>
+              </li>
+        </ul>
+        
+        </div>
+    </div>
+   
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" id="search" type="text" placeholder="Search" aria-label="Search">
+      <button  id="ara" type="button" class="btn btn-warning">Search</button>
+      </form>
+     
+</nav>
+
+<section class="bolum1">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+            <img src="../resimler/Ellipse 16.png" alt="" class="img-fluid">
+           
+
+        </div>
+        <div class="col-md-4">
+            <h2>ŞİKAYET EKLE</h2>
+            <form id="hoppa" class="row g-3">
+                <div class="col-md-12">
+                  <label for="inputFistName" class="form-label"></label>
+                  <input type="text" class="form-control" placeholder="BAŞLIK" id="title">
+                </div>
+               
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>Marka Seçin</option>
+                      <option value="1">BEKO</option>
+                      <option value="2">PAPARA</option>
+                      <option value="3">ADEYK</option>
+                      <option value="4">BOSCH</option>
+                      <option value="5">ARÇELİK</option>
+                      <option value="6">TEKNOSA</option>
+                      <option value="7">BİM</option>
+                      <option value="8">MİGROS</option>
+                      <option value="9">ADİDAS</option>
+                      <option value="10">CİNEMAMAXİMUM</option>
+                      <option value="11">BELLONA</option>
+                      <option value="12">İSTİKBAL</option>
+                      <option value="13">NİKE</option>
+                      <option value="14">HEPSİBURADA</option>
+                      <option value="15">TRENDYOL</option>
+                      <option value="16">YATAŞ</option>
+                      <option value="17">N11</option>
+                      <option value="18">VATAN</option>
+                      <option value="19">DİSNEY+</option>
+                    </select>
+                    <label for="floatingSelect">MARKA</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Şikayetim</label>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputFistName" class="form-label"></label>
+                    <input type="date" class="form-control" placeholder="ŞİKAYET TARİHİ" id="date">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputFistName" class="form-label"></label>
+                    <input type="file" class="form-control" placeholder="Fotoğraf Ekle" id="inputFirstName">
+                  </div>
+                 
+                  <div class="col-12">
+                    <a href="../html/müşterişikayetlerim.html"><button id="yolla" class="btn btn-primary" type="button">Şikayeti Gönder</button></a>
+                    
+                    
+                  </div>
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+      
+    </div>
+    </div>
+</section>
+<div></div>
+<div class="container my-5">
+
+  <footer class="text-center text-lg-start" style="background-color: #db6930;">
+    <div class="container d-flex justify-content-center py-5">
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" >
+        <a href="https://www.linkedin.com/in/senanur-iriz-3b91b0223/" class="fab fa-linkedin"></a>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" >
+        <a href="#" class="fab fa-linkedin"></a>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" >
+        <a href="#" class="fab fa-facebook-f"></a>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" >
+        <a href="#" class="fab fa-youtube"></a>
+      </button>
+    </div>
+
+    
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="../html/index.html">İtirazım Var</a>
+    </div>
+    
+  </footer>
+  
+</div>
+<script src="../js/şikayetekle.js"></script>
+<script>
+  //javascriptle arama 
+  function searchInDivs() {
+   // Arama kutusundaki kelimeyi al
+   var searchTerm = document.getElementById('search').value.toLowerCase();
+ 
+   // Tüm divleri al
+   var divs = document.getElementsByTagName('div');
+ 
+   // Divleri dolaş
+   for (var i = 0; i < divs.length; i++) {
+     var div = divs[i];
+ 
+     // Div içerisindeki "p" etiketlerini al
+     var paragraphs = div.getElementsByTagName('p');
+ 
+     // "p" etiketlerini dolaş
+     for (var j = 0; j < paragraphs.length; j++) {
+       var paragraph = paragraphs[j];
+ 
+       // Etiket içeriğini al ve kelime arama işlemini gerçekleştir
+       var content = paragraph.textContent.toLowerCase();
+       if (content.indexOf(searchTerm) !== -1) {
+ 
+         // Eğer kelime bulunduysa etiketi vurgula
+         paragraph.style.backgroundColor = 'yellow';
+       } else {
+         // Eğer kelime bulunamadıysa vurgulamayı kaldır
+         paragraph.style.backgroundColor = '';
+       }
+     }
+   }
+ }
+ 
+ // Arama butonuna tıklandığında arama işlemini gerçekleştir
+ document.getElementById('ara').addEventListener('click', searchInDivs);
+//şikayeti yollama
+$("#yolla").click(function() {
+          var baslik = $("#title").val();
+          var tarih = $("#date").val();
+         
+          localStorage.setItem("baslik", baslik);
+          localStorage.setItem("aciklama", "21.12.2023");
+          window.location.href = "müşterişikayetlerim.html";
+      });
+</script>
+</body>
+</html>
